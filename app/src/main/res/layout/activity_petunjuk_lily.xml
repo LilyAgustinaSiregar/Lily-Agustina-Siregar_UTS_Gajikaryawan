@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:lineSpacingMultiplier="1.3"
+        android:padding="20dp"
+        android:text="Cara menggunakan aplikasi:&#10;&#10;1. Pilih menu Info Gaji Karyawan pada Menu Utama.&#10;2. Isi Nomor Induk Karyawan, Nama, Gaji Pokok, Tunjangan Jabatan, dan Jumlah Hari Kerja.&#10;3. Klik tombol Hitung untuk melihat hasil.&#10;4. Hasil berupa Tunjangan Makan, Tunjangan Transport, Gaji Kotor, dan Gaji Bersih.&#10;5. Klik Reset untuk mengosongkan isian.&#10;&#10;Rumus perhitungan:&#10;• Tunjangan Makan = Hari Kerja × Rp10.000&#10;• Tunjangan Transport = Hari Kerja × Rp5.000&#10;• Gaji Kotor = Gaji Pokok + Tunj. Jabatan + Tunj. Makan + Tunj. Transport&#10;• Pajak = 10% × Gaji Kotor&#10;• Gaji Bersih = Gaji Kotor − Pajak"
+        android:textColor="@color/pink_text"
+        android:textSize="16sp" />
+</ScrollView>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/hint_nik">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/hint_nama">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/hint_gapok">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGapok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/hint_tunjab">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTunjab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/hint_hari">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etHari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHitung"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="@string/btn_hitung"
+                app:cornerRadius="14dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReset"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="@string/btn_reset"
+                app:cornerRadius="14dp"
+                app:strokeColor="@color/pink_primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvIdentitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Tunjangan Makan" android:textColor="@color/pink_text" android:textSize="13sp" />
+                <TextView android:id="@+id/tvMakan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:textColor="@color/pink_dark" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Tunjangan Transport" android:textColor="@color/pink_text" android:textSize="13sp" />
+                <TextView android:id="@+id/tvTransport" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:textColor="@color/pink_dark" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Gaji Kotor" android:textColor="@color/pink_text" android:textSize="13sp" />
+                <TextView android:id="@+id/tvKotor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:textColor="@color/pink_dark" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Pajak (10%)" android:textColor="@color/pink_text" android:textSize="13sp" />
+                <TextView android:id="@+id/tvPajak" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:textColor="@color/pink_dark" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Gaji Bersih" android:textColor="@color/pink_text" android:textSize="13sp" />
+                <TextView android:id="@+id/tvBersih" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-" android:textColor="@color/pink_dark" android:textSize="18sp" android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

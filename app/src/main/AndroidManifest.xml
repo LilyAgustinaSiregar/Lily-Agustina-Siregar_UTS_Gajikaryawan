@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GajiKaryawan">
+
+        <activity
+            android:name=".MainActivityLily"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GajiActivityLily" android:label="@string/menu_info_gaji" android:parentActivityName=".MainActivityLily" />
+        <activity android:name=".PetunjukActivityLily" android:label="@string/menu_petunjuk" android:parentActivityName=".MainActivityLily" />
+        <activity android:name=".TentangActivityLily" android:label="@string/menu_tentang" android:parentActivityName=".MainActivityLily" />
+    </application>
+</manifest>

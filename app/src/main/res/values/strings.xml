@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Gaji Karyawan</string>
+    <string name="menu_utama">Menu Utama</string>
+    <string name="menu_info_gaji">Info Gaji Karyawan</string>
+    <string name="menu_petunjuk">Petunjuk Penggunaan</string>
+    <string name="menu_tentang">Tentang Aplikasi</string>
+    <string name="menu_exit">Exit</string>
+    <string name="hint_nik">Nomor Induk Karyawan</string>
+    <string name="hint_nama">Nama</string>
+    <string name="hint_gapok">Gaji Pokok (Rp)</string>
+    <string name="hint_tunjab">Tunjangan Jabatan (Rp)</string>
+    <string name="hint_hari">Jumlah Hari Kerja</string>
+    <string name="btn_hitung">Hitung</string>
+    <string name="btn_reset">Reset</string>
+</resources>
